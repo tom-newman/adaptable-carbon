@@ -1,0 +1,47 @@
+import { ArgTypes, Canvas, Markdown, Meta } from '@storybook/addon-docs/blocks';
+import { cdnJs } from '../../globals/internal/storybook-cdn';
+import * as ecommerceStories from './ecommerce.stories';
+
+<Meta of={ecommerceStories} />
+
+# E-Commerce
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Horizontal](#horizontal)
+- [Component API](#component-api)
+- [CDN](#cdn)
+- [Feedback](#feedback)
+
+## Overview
+
+In this project I have used the IBM Carbon Design System as a base, to build out a theming system, allowing me to generate a large set of fully compliant web components, using latest native browser technologies.
+
+Below you can see examples of how these can be tuned to fit almost any brand - serioues, trendy, finincial, social etc. can all be acheived as I have tied the relevant styling parameters and metrics to a single object, so this can be easily configured to fit the purpose.
+
+<Canvas of={ecommerceStories.Default} />
+
+## Home
+
+<Canvas of={ecommerceStories.Home} />
+
+## List
+
+<Canvas of={ecommerceStories.List} />
+
+## Product
+
+<Canvas of={ecommerceStories.Product} />
+
+## Component API
+
+<ArgTypes of="cds-ecommerce" />
+
+<Markdown>{`${cdnJs({ components: ['ecommerce'] })}`}</Markdown>
+
+## Feedback
+
+Help us improve this component by providing feedback, asking questions on Slack,
+or updating this file on
+[GitHub](https://github.com/carbon-design-system/carbon/edit/main/packages/web-components/src/components/style/style.mdx).

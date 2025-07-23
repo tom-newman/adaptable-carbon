@@ -186,6 +186,7 @@ export const parameters = {
           'Carbon CDN style helpers',
           'Form Participation',
         ],
+        'Templates',
         'Components',
         'Layout',
       ],
